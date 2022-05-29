@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{  text-align: center;
+            color:teal;
+        }
+        #main{
+            width:23%;
+            height:370px;
+            border:1px solid white;
+            margin:auto;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+        }
+        #display{
+            width: 80%;
+            height:50px;
+            margin:30px 20px 0 30px;
+            ;
+            border-radius: 7px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+        }
+      #buttons{
+          display:grid;
+          grid-template-columns: repeat(4,1fr);
+          grid-template-rows: repeat(4,50px);
+          gap:10px;
+          padding: 20px;
+      }
+      #buttons>button{
+            height:100%;
+            margin-left:5px;
+            border-radius:7px;
+            font-weight:bold;
+            background-color: white;
+            color:black;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+             border:0; 
+      }
+      #buttons>button:last-child{
+            background-color:black;
+            color:white;
+        }
+        #buttons>button:nth-child(13){
+            background-color: red;
+            color:white;}
+            #buttons>button:nth-child(4){
+            background-color:black;
+            color:white;
+        }
+        #buttons>button:nth-child(8){
+            background-color:black;
+            color:white;
+        }
+        #buttons>button:nth-child(12){
+            background-color:black;
+            color:white;
+        }
+        #buttons>button:nth-child(15){
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <h1>Masai Calculator</h1>
+    <div id="main">
+        <div id="display"></div>
+        <div id="buttons">
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>+</button>
+            <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>-</button>
+        <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>x</button>
+            <button>C</button>
+    <button>0</button>
+    <button>=</button>
+    <button>/</button>
+</div>
+        </div>
+        <div></div>
+
+    </div>
+</body>
+</html>
