@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Navbar</title>
+        <style>
+            #navbar{
+                width: 100%;
+                height: 60px;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            #navbar>div:first-child{
+                width: 10%;
+                height: 100%;
+             
+
+            }
+            #navbar>div:last-child{
+                width: 70%;
+                height: 100%;
+         
+                display: flex;
+                justify-content: space-around;
+            }
+            #navbar>div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-transform: uppercase;
+            }
+            p+div>img{
+                width: 20px;
+                height: 20px;
+                margin-left: 10px;
+            }
+            p+div{
+                display: flex;
+                background-color: #f2fdff;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                color: red;
+                border: 1px solid  red;
+                background-color: #f2fdff;
+
+            }
+        </style>
+    </head>
+    <body>
+        <div id="navbar">
+            <div>
+            <img src="https://masaischool.com/img/navbar/logo.svg" alt="masaischool">
+        </div>
+        <div>
+            <select> <option value="">Courses</option></select>
+            <p>Fees and ISA</p>
+            <p>About Us</p>
+            <p>Hire from us</p>
+            <p>FAQ</p>
+            <p>Events</p>
+            <button>Login</button>
+        </div>
+        </div>
+    </body>
+</html>
