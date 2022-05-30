@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>
+            Grid_area
+        </title>
+        <style>
+            #container{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows: repeat(3,300px);
+                gap: 20px;
+            }
+            #container>div{
+                background-color: black;
+            }
+            #container>div:nth-child(1){
+                grid-area: s;
+            }
+            #container>div:nth-child(2){
+                grid-area: u;
+            }
+            #container>div:nth-child(3){
+                grid-area: z;
+            }
+            #container>div:nth-child(4){
+                grid-area: w;
+            }
+            #container>div:nth-child(5){
+                grid-area: v;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div>A</div>
+            <div>B</div>
+            <div>C</div>
+            <div>D</div>
+            <div>E</div>
+        </div>
+    </body>
+</html>
