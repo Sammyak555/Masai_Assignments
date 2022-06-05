@@ -9,7 +9,7 @@
         h1{  text-align: center;
             color:teal;
         }
-        #main{
+        #calculator{
             width:23%;
             height:370px;
             border:1px solid white;
@@ -25,7 +25,10 @@
             ;
             border-radius: 7px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
         }
       #buttons{
           display:grid;
@@ -71,8 +74,11 @@
 </head>
 <body>
     <h1>Masai Calculator</h1>
-    <div id="main">
-        <div id="display"></div>
+    <div id="calculator">
+        <div id="display">
+            <!-- display numbers here -->
+            
+        </div>
         <div id="buttons">
             <button>1</button>
             <button>2</button>
@@ -85,7 +91,7 @@
         <button>7</button>
             <button>8</button>
             <button>9</button>
-            <button>x</button>
+            <button>*</button>
             <button>C</button>
     <button>0</button>
     <button>=</button>
@@ -97,3 +103,24 @@
     </div>
 </body>
 </html>
+<script>
+
+    let keys=document.querySelectorAll("#buttons>button");
+    for(let i=0;i<keys.length;i++){
+        keys[i].addEventListener("click", mycalculator)
+        
+    }
+    let bag="";
+    function mycalculator(event){
+        let targetNumber = event.target.innerText ;
+        if(targetNumber=="C"){
+            bag="";
+            document.querySelector("#display").innerText=" ";
+        }else if(targetNumber=="="){
+            document.querySelector("#display").innerText=eval(bag);
+        }  else{
+        bag=bag+targetNumber;
+        document.querySelector("#display").innerText=bag;
+        }
+    }
+</script>
