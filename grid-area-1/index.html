@@ -1,42 +1,51 @@
-<html>
-    <head>
-        <title>
-            Grid_area
-        </title>
-        <style>
-            #container{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows: repeat(3,300px);
-                gap: 20px;
-            }
-            #container>div{
-                background-color: black;
-            }
-            #container>div:nth-child(1){
-                grid-area: s;
-            }
-            #container>div:nth-child(2){
-                grid-area: u;
-            }
-            #container>div:nth-child(3){
-                grid-area: z;
-            }
-            #container>div:nth-child(4){
-                grid-area: w;
-            }
-            #container>div:nth-child(5){
-                grid-area: v;
-            }
-        </style>
-    </head>
-    <body>
-        <div id="container">
-            <div>A</div>
-            <div>B</div>
-            <div>C</div>
-            <div>D</div>
-            <div>E</div>
-        </div>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,70px);
+            gap: 20px;
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e";
+        }
+        #container>div{
+            background-color:  grey;
+            border-radius: 5px;
+
+        }
+        #container>div:nth-child(1){
+            grid-area: a;
+        }
+        #container>div:nth-child(2){
+            grid-area: b;
+        }
+        #container>div:nth-child(3){
+            grid-area: c;
+        }
+        #container>div:nth-child(4){
+            grid-area: d;
+        }
+        #container>div:nth-child(5){
+            grid-area: e;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
+</body>
 </html>
